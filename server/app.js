@@ -7,7 +7,7 @@ import cors from 'cors';
 const app = express();
 
 // Middleware
-app.use(cors()); // Allow all origins
+app.use(cors("*")); // Allow all origins
 app.use(bodyParser.json()); // For parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
 
